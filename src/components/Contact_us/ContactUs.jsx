@@ -90,7 +90,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-telephone" />
               </div>
               <div className="info-con">
-                <span>+91 99186 39000</span>
+                <span>+91 9517292555</span>
               </div>
             </div>
             <div className="info-dets">
@@ -98,7 +98,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-mail-at-sign-01" />
               </div>
               <div className="info-con">
-                <span>maniessh@mahesh carpets.com</span>
+                <span>info@maheshcarpets.com</span>
               </div>
             </div>
             <div className="info-dets">
@@ -106,7 +106,7 @@ export default function ContactUs() {
                 <i className="hgi-stroke hgi-location-03" />
               </div>
               <div className="info-con">
-                <span>Mahmoorganj, Varanasi, India - 221010</span>
+                <span>Jagatpur GT Road Varanasi 221302 Uttar Pradesh</span>
               </div>
             </div>
           </div>

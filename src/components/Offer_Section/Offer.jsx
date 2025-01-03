@@ -43,20 +43,20 @@ export default function Offer() {
 
             <div className="details-badge-container">
               <div className="badge-container">
-                <span>25</span>
-                <p>Years of Experienced</p>
+                <span>50+</span>
+                <p>Years of Experience</p>
               </div>
               <div className="badge-container">
-                <span>510</span>
-                <p>Rugs in Catalog</p>
+                <span>60,000</span>
+                <p>sq Feet Total Manufacturing Area</p>
               </div>
               <div className="badge-container">
-                <span>100</span>
-                <p>Team Members</p>
+                <span>200+</span>
+                <p>Artisans</p>
               </div>
               <div className="badge-container">
-                <span>35</span>
-                <p>Countries we Service</p>
+                <span>35+</span>
+                <p>Countries we Exporting</p>
               </div>
             </div>
           </div>

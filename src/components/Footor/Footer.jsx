@@ -150,18 +150,18 @@ export default function Footer() {
                 <li>
                   <i className="hgi-stroke hgi-telephone" />
                   <Link href="/">
-                    <span>+91 99186 39000</span>
+                    <span>+91 9517292555</span>
                   </Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-mail-at-sign-01" />
                   <Link href="/">
-                    <span>maniessh@mahesh carpets.com</span>
+                    <span>info@maheshcarpets.com</span>
                   </Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-location-03" />
-                  <span>Mahmoorganj, Varanasi, India - 221010</span>
+                  <span>Jagatpur GT Road Varanasi 221302 Uttar Pradesh</span>
                 </li>
               </ul>
             </div>

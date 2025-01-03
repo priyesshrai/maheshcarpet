@@ -1,7 +1,5 @@
-import ContactUs from '@/components/Contact_us/ContactUs'
-import Footer from '@/components/Footor/Footer'
+import Certificates from '@/components/Certificates/Certificates'
 import HeroSection from '@/components/Hero_Section/HeroSection'
-import Navbar from '@/components/Navbar/Navbar'
 import Offer from '@/components/Offer_Section/Offer'
 import Benefits from '@/components/Our_Benefits/Benefits'
 import Collection from '@/components/Our_Collection/Collection'
@@ -17,6 +15,7 @@ export default function page() {
       <Collection/>
       <Slider/>
       <Benefits/>
+      <Certificates/>
       <Offer/>
       <Testimonials/>
       {/* <ContactUs/> */}

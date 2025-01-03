@@ -10,7 +10,7 @@ export default function Collection() {
           <h2>Discover Our Exquisite Collection of Carpets & Rugs.</h2>
         </div>
         <div className="collection-sub-heading">
-          <p style={{ fontSize: "1.8vw" }}>
+          <p style={{ fontSize: "1.8vw", color:"#1e1e1e" }}>
             Transform Your Space with Timeless Elegance of Premium Carpets and
             Rugs.
           </p>
