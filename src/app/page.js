@@ -10,7 +10,6 @@ import React from 'react'
 export default function page() {
   return (
     <>
-      {/* <Navbar/> */}
       <HeroSection/>
       <Collection/>
       <Slider/>
@@ -18,8 +17,6 @@ export default function page() {
       <Certificates/>
       <Offer/>
       {/* <Testimonials/> */}
-      {/* <ContactUs/> */}
-      {/* <Footer/> */}
     </>
   )
 }
