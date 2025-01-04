@@ -66,6 +66,8 @@ header {
 
     .logo-wraper a svg {
       fill: #f5f5f5;
+      width: 350px;
+      height: 54px;
     }
     .logo-wraper a .active-logo {
       fill: var(--dark-font);
@@ -98,41 +100,6 @@ header {
           &:hover {
             color: var(--light-font);
             background-color: var(--dark-font);
-          }
-        }
-        .menu-btn-container {
-          position: relative;
-          width: 60px;
-          height: 60px;
-          display: none;
-
-          .menu-btn-wraper {
-            width: 100%;
-            height: 100%;
-            border: 1px solid;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            gap: 5px;
-            flex-direction: column;
-            background-color: var(--dark-font);
-
-            .menu-btn {
-              width: 45px;
-              height: 1px;
-              background-color: var(--light-font);
-              transition: transform 0.3s ease, opacity 0.3s ease;
-            }
-            .active-btn {
-              transform: rotate(45deg);
-              position: absolute;
-
-              &:last-child {
-                transform: rotate(-45deg);
-              }
-            }
           }
         }
 
@@ -175,6 +142,42 @@ header {
   }
 }
 
+.menu-btn-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: none;
+
+  .menu-btn-wraper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+    flex-direction: column;
+    background-color: var(--dark-font);
+
+    .menu-btn {
+      width: 45px;
+      height: 1px;
+      background-color: var(--light-font);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .active-btn {
+      transform: rotate(45deg);
+      position: absolute;
+
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
 .hero-section,
 .collection-section {
   position: relative;
@@ -190,17 +193,17 @@ header {
   .hero-heading,
   .collection-heading {
     position: relative;
-    max-width: 75vw;
+    max-width: 65rem;
 
     h1 {
-      font-size: 4vw;
+      font-size: 4.5rem;
       font-family: var(--font-jura);
       color: var(--light-font);
       letter-spacing: -2px;
       line-height: 1;
     }
     h2 {
-      font-size: 3.5vw;
+      font-size: 3.5rem;
       font-weight: 800;
       font-family: var(--font-jura);
       color: var(--dark-font);
@@ -210,11 +213,11 @@ header {
   .hero-sub-heading,
   .collection-sub-heading {
     position: relative;
-    max-width: 65vw;
-    margin-top: 30px;
+    max-width: 60rem;
+    margin-top: 25px;
 
     p {
-      font-size: 2vw;
+      font-size: 1.5rem;
       font-family: var(--font-akaya);
       color: var(--light-font);
     }
@@ -620,7 +623,7 @@ header {
 
       .badge-container {
         position: relative;
-        width: 170px;
+        flex: 1 0 200px;
         height: 8rem;
         background-color: var(--dark-font);
         border-radius: 10px;
@@ -858,7 +861,6 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
       }
 
       .footer-description {
@@ -874,7 +876,6 @@ footer {
         gap: 10px;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         margin-top: 30px;
 
         .footer-icon {
@@ -1257,8 +1258,8 @@ footer {
     color: var(--light-dark-font);
     margin-bottom: 20px;
 
-    h2{
-      font-size:23px ;
+    h2 {
+      font-size: 23px;
     }
 
     p {
@@ -1350,3 +1351,617 @@ footer {
 .certificate-wraper img:hover {
   transform: translateY(-15px);
 }
+
+.mobile-navigation {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .section {
+    padding: 3% 5%;
+  }
+  .hero-section .hero-heading h1 {
+    font-size: 3.5rem;
+  }
+  .collection-section .collection-heading h2 {
+    font-size: 3.2rem;
+  }
+  .hero-section .hero-sub-heading p {
+    font-size: 1.15rem;
+  }
+  .collection-cards-container .collection-cards {
+    flex: 0 1 26rem;
+    padding: 8px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-name
+    a
+    span {
+    font-size: 25px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-description
+    p {
+    font-size: 14px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a {
+    font-size: 17px;
+  }
+  .contact-form {
+    width: 62%;
+  }
+  .contact-info-container {
+    width: 35%;
+  }
+  .footer-container .sec-container:last-child {
+    margin-top: 40px;
+  }
+  .product-section {
+    margin-top: 130px;
+  }
+  .product-section .product-desc .product-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 902px) {
+  .collection-cards-container .collection-cards {
+    flex: 0 1 22rem;
+    padding: 8px;
+    height: 16rem;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-name
+    a
+    span {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-description
+    p {
+    font-size: 12px;
+  }
+
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .collection-section .collection-heading h2 {
+    font-size: 3rem;
+  }
+  .certificate-wraper img {
+    flex: 1 0 200px;
+  }
+  .offer-section .benefit-heading h2 {
+    font-size: 3rem;
+  }
+  .offer-container .offer-details-section .details-heading h3 {
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+  }
+  .offer-container .offer-details-section .details-description p {
+    font-size: 0.8rem;
+  }
+  .offer-container
+    .offer-details-section
+    .details-badge-container
+    .badge-container {
+    flex: 1 0 150px;
+    height: 7.3rem;
+  }
+  .offer-container
+    .offer-details-section
+    .details-badge-container
+    .badge-container
+    span {
+    font-size: 2rem;
+  }
+  .footer-container .first-container {
+    flex: 1 0 280px;
+  }
+  .footer-logo img {
+    width: 135px;
+  }
+  /* .menu-btn-container {
+    display: block;
+  } */
+  /* header nav .nav-links-container {
+    position: fixed;
+    right: 0px;
+    bottom: 0;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 20px;
+    background-color: var(--light-font);
+    width: 100%;
+  }
+  header nav .nav-links-container .nav-links {
+    width: 100%;
+  } */
+
+  header nav .nav-links-container {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+
+    .mabile-nav-links-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      .nav-links {
+        flex: 1;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        a {
+          width: 35px;
+          height: 35px;
+          position: relative;
+          color: var(--dark-font);
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 1rem;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: color 0.3s ease, background-color 0.3s ease;
+
+          &:hover {
+            color: var(--light-font);
+            background-color: var(--dark-font);
+          }
+        }
+        span {
+          text-transform: uppercase;
+          /* font-size: 14px; */
+        }
+
+        .dropdown {
+          position: absolute;
+          /* bottom: 65px; */
+          bottom: -500%;
+          left: 0;
+          width: max-content;
+          background-color: #fff;
+          z-index: 100;
+          padding: 15px;
+          transition: all 0.3s ease;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            li {
+              width: 100%;
+
+              a {
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                align-items: center;
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+        &:hover .dropdown {
+          display: block;
+          opacity: 1;
+        }
+        .act-drp {
+          bottom: 65px !important;
+        }
+      }
+
+      .active-link {
+        color: var(--light-font) !important;
+        background-color: var(--dark-font);
+      }
+    }
+  }
+  .hero-section {
+    padding: 196px 0 !important;
+  }
+  .slider-container button {
+    display: none;
+  }
+  .base-footer {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 882px) {
+  .hero-section .hero-heading h1 {
+    font-size: 2.5rem;
+  }
+  .collection-section .collection-heading h2 {
+    font-size: 2.2rem;
+  }
+  .benefit-section .benefit-container .benefit-card {
+    flex: 0 0 340px;
+    height: 11rem;
+  }
+  .offer-section .benefit-heading h2 {
+    font-size: 2.5rem;
+  }
+  .offer-container {
+    gap: 30px;
+  }
+  .offer-container .offer-image-section {
+    flex: 0 0 360px;
+  }
+  .offer-container .offer-details-section {
+    flex: 0 0 calc(100% - 390px);
+  }
+  .hero-section {
+    padding: 215px 0 !important;
+  }
+  .footer-container .sec-container:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collection-cards-container .collection-cards {
+    flex: 0 1 18rem;
+    padding: 5px;
+    height: 15rem;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details {
+    padding: 5px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a {
+    font-size: 12px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon
+    i {
+    font-size: 16px;
+    line-height: 1;
+  }
+  .md\:basis-1\/2 {
+    flex-basis: 50% !important;
+  }
+  .benefit-section .benefit-heading h2 {
+    font-size: 3rem;
+  }
+  .benefit-section .benefit-container .benefit-card .benefit-card-image {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .benefit-section .benefit-container .benefit-card {
+    flex: 1 0 300px;
+  }
+  .benefit-section .benefit-container .benefit-card .benefit-card-details {
+    width: calc(100% - 45px);
+  }
+  .certificate-section .benefit-heading h2 {
+    font-size: 3rem;
+  }
+  .certificate-section .benefit-heading p {
+    font-size: 1rem;
+  }
+  .certificate-section .certificate-desc {
+    font-size: 14px;
+  }
+  .offer-container .offer-image-section {
+    flex: 0 0 315px;
+  }
+  .offer-container .offer-details-section {
+    flex: 1 0 calc(100% - 390px);
+  }
+  .offer-container .offer-details-section .details-heading h3 {
+    font-size: 1.3rem;
+  }
+  .offer-container
+    .offer-details-section
+    .details-badge-container
+    .badge-container
+    span {
+    font-size: 1.5rem;
+  }
+  .offer-container
+    .offer-details-section
+    .details-badge-container
+    .badge-container
+    p {
+    font-size: 14px;
+  }
+  .offer-container
+    .offer-details-section
+    .details-badge-container
+    .badge-container {
+    height: 6.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav .logo-wraper a svg {
+    fill: #f5f5f5;
+    width: 230px;
+    height: 50px;
+  }
+  .hero-section .hero-heading h1 {
+    font-size: 2rem;
+  }
+  .hero-section .hero-sub-heading p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .hero-section {
+    padding: 230px 0 !important;
+  }
+  .collection-section .collection-heading h2 {
+    font-size: 1.5rem;
+  }
+  .collection-section .collection-sub-heading p {
+    font-size: 1rem !important;
+    line-height: 1;
+  }
+  .collection-section {
+    margin-top: 40px;
+  }
+  .collection-cards-container .collection-cards {
+    flex: 1 1 20rem;
+    padding: 10px;
+    height: 14rem;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a {
+    font-size: 16px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon
+    i {
+    font-size: 20px;
+  }
+  .benefit-section .benefit-heading h2 {
+    font-size: 2.2rem;
+  }
+  .benefit-section {
+    margin-top: 40px;
+  }
+  .certificate-section .benefit-heading p {
+    font-size: 0.8rem;
+  }
+  .certificate-section .certificate-desc {
+    font-size: 13px;
+    text-align: left;
+  }
+  .certificate-wraper img {
+    flex: 1 0 135px;
+    width: 130px;
+  }
+  .offer-section {
+    margin-top: 40px;
+  }
+  .offer-section .benefit-heading h2 {
+    font-size: 2rem;
+  }
+  .offer-container .offer-image-section {
+    flex: 1 0 315px;
+  }
+  .contact-us-section .benefit-heading h2 {
+    font-size: 3rem;
+  }
+  .contact-us-section {
+    margin-top: 40px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-info-container {
+    width: 100%;
+    position: relative;
+    transform: translateY(0);
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .product-section .product-desc .product-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-section .product-desc {
+    font-size: 30px;
+  }
+  .product-content p {
+    font-size: 14px !important;
+  }
+  .product-wraper a {
+    flex: 1 0 240px !important;
+  }
+  .single-product-image{
+    flex: 1 0 100%;
+  }
+  .single-product-details{
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-section .hero-heading h1 {
+    font-size: 1.6rem;
+  }
+  .hero-section .hero-sub-heading {
+    margin-top: 20px;
+  }
+  .hero-section .hero-sub-heading p {
+    font-size: 0.9rem;
+  }
+  .hero-section {
+    padding: 245px 0 !important;
+  }
+  .collection-section .collection-heading h2 {
+    font-size: 1.2rem;
+  }
+  .collection-section .collection-sub-heading {
+    margin-top: 20px;
+  }
+  .collection-section .collection-sub-heading p {
+    font-size: 0.9rem !important;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .collection-cards-container
+    .collection-cards
+    .collection-body
+    .collection-details
+    .collection-btn
+    a
+    .icon
+    i {
+    font-size: 17px;
+  }
+  .benefit-section .benefit-heading h2 {
+    font-size: 1.8rem;
+  }
+  .benefit-section .benefit-container .benefit-card .benefit-card-details {
+    width: calc(100% - 65px);
+  }
+  .certificate-section .benefit-heading h2 {
+    font-size: 2.5rem;
+  }
+  .certificate-section {
+    padding: 30px;
+  }
+  .certificate-section .benefit-heading p {
+    font-size: 0.7rem;
+  }
+  .certificate-wraper img {
+    flex: 1 0 110px;
+    width: 110px;
+  }
+  .offer-section .benefit-heading h2 {
+    font-size: 1.5rem;
+  }
+  .mobile-navigation .mabile-nav-links-container .nav-links span {
+    font-size: 12px;
+  }
+  .footer-description {
+    text-align: center;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .footer-container .sec-container:nth-child(2) {
+    margin-top: 40px;
+  }
+  .footer-links {
+    margin-top: 15px !important;
+  }
+
+  .product-section .product-desc .product-title {
+    font-size: 20px;
+  }
+  .product-content p {
+    font-size: 12px !important;
+  }
+}
+
+
