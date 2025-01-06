@@ -1,20 +1,28 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [openDropDown, setOpenDropDown] = useState(false)
+  const [openDropDown, setOpenDropDown] = useState(false);
+  const [showMobMenu, setShowMobMenu] = useState(true);
 
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Collection", path: "/collection" },
-    // { name: "Blogs", path: "/blogs" },
-    { name: "Contact", path: "/contact" },
-  ];
+  useEffect(() => {
+    const handleWheel = (event) => {
+      if (event.deltaY > 0) {
+        setShowMobMenu(false);
+      }
+      if (event.deltaY < 0) {
+        setShowMobMenu(true);
+      }
+    };
+    window.addEventListener("wheel", handleWheel);
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
 
   return (
     <header>
@@ -91,7 +99,12 @@ export default function Navbar() {
             <div className="menu-btn"></div>
           </div>
         </div> */}
-        <div className="mobile-navigation">
+        <div
+          className="mobile-navigation"
+          style={{
+            transform: `${showMobMenu ? "translateY(0)" : "translateY(100%)"}`,
+          }}
+        >
           <ul className="mabile-nav-links-container">
             <li className="nav-links">
               <Link href="/" className={pathname === "/" ? "active-link" : ""}>
@@ -108,7 +121,10 @@ export default function Navbar() {
               </Link>
               <span>About</span>
             </li>
-            <li className="nav-links" onClick={()=>setOpenDropDown(!openDropDown)}>
+            <li
+              className="nav-links"
+              onClick={() => setOpenDropDown(!openDropDown)}
+            >
               <Link
                 href="#"
                 className={
@@ -118,7 +134,7 @@ export default function Navbar() {
                 <i className="hgi-stroke hgi-collections-bookmark" />
               </Link>
               <span>collections</span>
-              <div className={`dropdown ${openDropDown && 'act-drp'}`}>
+              <div className={`dropdown ${openDropDown && "act-drp"}`}>
                 <ul>
                   <li>
                     <Link href="/collections/handloom">Handloom</Link>

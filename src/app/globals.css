@@ -1512,6 +1512,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: #fff;
+    transition: all 0.5s ease;
 
     .mabile-nav-links-container {
       position: relative;
