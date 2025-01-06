@@ -12,11 +12,13 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
+import Enquiry from "@/components/ProductEnquiry/Enquiry";
 
 export default function Product({ productId }) {
   const pathname = usePathname();
   const router = useRouter();
   const [productCategory, setProductCategory] = useState(null);
+  const [enquiryForm, setEnquiryForm] = useState(false);
 
   const handleBackClick = () => {
     router.back();
@@ -94,13 +96,16 @@ export default function Product({ productId }) {
                   <h2>{data?.material}</h2>
                 </div>
                 <div className="product-cta">
-                  <button className="btn">Send Enquery</button>
+                  <button className="btn" onClick={() => setEnquiryForm(true)}>
+                    Send Enquiry
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         )}
       </div>
+      {enquiryForm && <Enquiry closeBtn={setEnquiryForm} />}
     </section>
   );
 }

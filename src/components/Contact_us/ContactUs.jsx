@@ -1,6 +1,65 @@
-import React from "react";
+"use client";
+import axios from "axios";
+import React, { useState } from "react";
+import FormLoader from "../FormLoader/FormLoader";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function ContactUs() {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    contactNo: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  function handleChange(event) {
+    const { id, value } = event.target;
+    setData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setLoading(true);
+
+    toast.promise(
+      axios
+        .post("/api/contact", data, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((response) => {
+          console.log("Message sent successfully", response);
+          if (response.status === 200) {
+            setData({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+              contactNo: "",
+            });
+          }
+        })
+        .catch((error) => {
+          console.log("Error sending message", error.message);
+          throw error;
+        })
+        .finally(() => {
+          setLoading(false);
+        }),
+      {
+        loading: "Sending message...",
+        success: "Message sent successfully!",
+        error: "Error sending message. Please try again.",
+      }
+    );
+  }
+
   return (
     <section className="section" style={{ background: "#fff" }}>
       <div className="contact-us-section">
@@ -9,7 +68,7 @@ export default function ContactUs() {
         </div>
 
         <div className="contact-form-container">
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-column">
                 <label htmlFor="name" className="form-label">
@@ -20,6 +79,8 @@ export default function ContactUs() {
                   id="name"
                   placeholder="Your name"
                   className="form-input"
+                  value={data.name}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -32,20 +93,24 @@ export default function ContactUs() {
                   id="email"
                   placeholder="Your email"
                   className="form-input"
+                  value={data.email}
+                  onChange={handleChange}
                   required
                 />
               </div>
             </div>
             <div className="form-row">
               <div className="form-column">
-                <label htmlFor="contact" className="form-label">
+                <label htmlFor="contactNo" className="form-label">
                   Contact
                 </label>
                 <input
                   type="tel"
-                  id="contact"
+                  id="contactNo"
                   placeholder="Your phone number"
                   className="form-input"
+                  value={data.contactNo}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -58,26 +123,30 @@ export default function ContactUs() {
                   id="subject"
                   placeholder="Subject"
                   className="form-input"
+                  value={data.subject}
+                  onChange={handleChange}
                   required
                 />
               </div>
             </div>
             <div className="form-row">
               <div className="form-column">
-                <label htmlFor="issue" className="form-label">
+                <label htmlFor="message" className="form-label">
                   Describe your issue
                 </label>
                 <textarea
-                  id="issue"
+                  id="message"
                   placeholder="Describe your issue"
                   rows="4"
                   className="form-textarea"
+                  value={data.message}
+                  onChange={handleChange}
                   required
                 ></textarea>
               </div>
             </div>
             <button type="submit" className="submit-button">
-              Submit
+              {loading ? <FormLoader /> : "Submit"}
             </button>
           </form>
 
@@ -111,6 +180,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+        <Toaster />
       </div>
     </section>
   );
