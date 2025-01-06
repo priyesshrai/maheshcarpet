@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./product";
+import Product from "./Product";
 
 export default async function Page({ params }) {
   const { productId } = await params;
