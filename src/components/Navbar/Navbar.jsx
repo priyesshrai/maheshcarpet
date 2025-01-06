@@ -8,21 +8,40 @@ export default function Navbar() {
   const pathname = usePathname();
   const [openDropDown, setOpenDropDown] = useState(false);
   const [showMobMenu, setShowMobMenu] = useState(true);
+  let lastScrollY = window.scrollY;
 
   useEffect(() => {
-    const handleWheel = (event) => {
-      if (event.deltaY > 0) {
-        setShowMobMenu(false);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setShowMobMenu(false); // Scrolling down
+      } else {
+        setShowMobMenu(true); // Scrolling up
       }
-      if (event.deltaY < 0) {
-        setShowMobMenu(true);
-      }
+      lastScrollY = currentScrollY;
     };
-    window.addEventListener("wheel", handleWheel);
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   const handleWheel = (event) => {
+  //     if (event.deltaY > 0) {
+  //       setShowMobMenu(false);
+  //     }
+  //     if (event.deltaY < 0) {
+  //       setShowMobMenu(true);
+  //     }
+  //   };
+  //   window.addEventListener("wheel", handleWheel);
+  //   return () => {
+  //     window.removeEventListener("wheel", handleWheel);
+  //   };
+  // }, []);
 
   return (
     <header>
