@@ -1827,6 +1827,9 @@ footer {
   .product-section .product-body .product-name h1 {
     font-size: 2rem;
   }
+  .single-product-image .relative button{
+    display: none !important;
+  }
 }
 
 @media (max-width: 640px) {
