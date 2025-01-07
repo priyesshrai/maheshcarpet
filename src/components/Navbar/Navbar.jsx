@@ -7,27 +7,27 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   const [openDropDown, setOpenDropDown] = useState(false);
-  const [showMobMenu, setShowMobMenu] = useState(true);
-  let lastScrollY = 0;
+  // const [showMobMenu, setShowMobMenu] = useState(true);
+  // let lastScrollY = 0;
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      lastScrollY = window.scrollY;
-      const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > lastScrollY) {
-          setShowMobMenu(false);
-        } else {
-          setShowMobMenu(true);
-        }
-        lastScrollY = currentScrollY;
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     lastScrollY = window.scrollY;
+  //     const handleScroll = () => {
+  //       const currentScrollY = window.scrollY;
+  //       if (currentScrollY > lastScrollY) {
+  //         setShowMobMenu(false);
+  //       } else {
+  //         setShowMobMenu(true);
+  //       }
+  //       lastScrollY = currentScrollY;
+  //     };
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => {
+  //       window.removeEventListener("scroll", handleScroll);
+  //     };
+  //   }
+  // }, []);
 
   // useEffect(() => {
   //   const handleWheel = (event) => {
@@ -121,9 +121,9 @@ export default function Navbar() {
         </div> */}
         <div
           className="mobile-navigation"
-          style={{
-            transform: `${showMobMenu ? "translateY(0)" : "translateY(100%)"}`,
-          }}
+          // style={{
+          //   transform: `${showMobMenu ? "translateY(0)" : "translateY(100%)"}`,
+          // }}
         >
           <ul className="mabile-nav-links-container">
             <li className="nav-links">

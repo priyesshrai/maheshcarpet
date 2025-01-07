@@ -16,7 +16,7 @@ export default function page() {
       <Benefits/>
       <Certificates/>
       <Offer/>
-      {/* <Testimonials/> */}
+      <Testimonials/>
     </>
   )
 }

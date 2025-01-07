@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
 import Enquiry from "@/components/ProductEnquiry/Enquiry";
+import Fancybox from "@/components/ImageZoom/Fancybox";
 
 export default function Product({ productId }) {
   const pathname = usePathname();
@@ -51,6 +52,11 @@ export default function Product({ productId }) {
           <Loader />
         ) : (
           <div className="product-body">
+            <div className="product-name">
+              <h1>
+                {data.color} {data.category} carpet
+              </h1>
+            </div>
             <div className="product-wraper">
               <div className="single-product-image">
                 <Carousel className="w-full">
@@ -59,13 +65,17 @@ export default function Product({ productId }) {
                       <div className="p-0">
                         <Card>
                           <CardContent className="flex aspect-square items-center justify-center p-0">
-                            <Image
-                              src={data?.src}
-                              alt={data?.alt}
-                              width={500}
-                              height={500}
-                              className="w-full"
-                            />
+                            <Fancybox>
+                              <div data-fancybox="gallery" href={data?.src}>
+                                <Image
+                                  src={data?.src}
+                                  alt={data?.alt}
+                                  width={500}
+                                  height={500}
+                                  className="w-full"
+                                />
+                              </div>
+                            </Fancybox>
                           </CardContent>
                         </Card>
                       </div>
@@ -93,7 +103,7 @@ export default function Product({ productId }) {
                   <p>
                     <span>Collection:</span> {data?.collection}
                   </p>
-                  <h2>{data?.material}</h2>
+                  {/* <h2>{data?.material}</h2> */}
                 </div>
                 <div className="product-cta">
                   <button className="btn" onClick={() => setEnquiryForm(true)}>
