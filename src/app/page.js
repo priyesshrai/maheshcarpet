@@ -1,5 +1,6 @@
 import Certificates from '@/components/Certificates/Certificates'
 import HeroSection from '@/components/Hero_Section/HeroSection'
+import Map from '@/components/Map/Map'
 import Offer from '@/components/Offer_Section/Offer'
 import Benefits from '@/components/Our_Benefits/Benefits'
 import Collection from '@/components/Our_Collection/Collection'
@@ -17,6 +18,7 @@ export default function page() {
       <Certificates/>
       <Offer/>
       <Testimonials/>
+      <Map/>
     </>
   )
 }

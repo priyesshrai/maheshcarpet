@@ -26,38 +26,11 @@ export default function Footer() {
             <div className="footer-social">
               <div className="footer-icon">
                 <Link
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="hgi-stroke hgi-facebook-02" />
-                </Link>
-              </div>
-              <div className="footer-icon">
-                <Link
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="hgi-stroke hgi-new-twitter" />
-                </Link>
-              </div>
-              <div className="footer-icon">
-                <Link
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/company/mahesh-carpets/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="hgi-stroke hgi-linkedin-02" />
-                </Link>
-              </div>
-              <div className="footer-icon">
-                <Link
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="hgi-stroke hgi-instagram" />
                 </Link>
               </div>
               <div className="footer-icon">
@@ -83,15 +56,15 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/">Home</Link>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/">About Us</Link>
+                  <Link href="/about">About Us</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/">Contact Us</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
@@ -116,23 +89,23 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="#">Hand Knotted</Link>
+                  <Link href="/collections/hand-knotted">Hand Knotted</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="#">Hand Tufted</Link>
+                  <Link href="/collections/hand-tufted">Hand Tufted</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="#">Loom Knotted</Link>
+                  <Link href="/collections/shaggy">Shaggy</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="#">Indo Tibetan</Link>
+                  <Link href="/collections/handloom">Handloom</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="#">Custom Made</Link>
+                  <Link href="/collections/flat-weave">Flat Weave</Link>
                 </li>
               </ul>
             </div>
@@ -155,7 +128,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-mail-at-sign-01" />
-                  <Link href="/">
+                  <Link href="mailto:info@maheshcarpets.com">
                     <span>info@maheshcarpets.com</span>
                   </Link>
                 </li>

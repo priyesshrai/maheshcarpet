@@ -4,8 +4,10 @@ import FormLoader from "../FormLoader/FormLoader";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
-export default function Enquiry({ closeBtn }) {
+export default function Enquiry({ closeBtn, name, category }) {
   const [data, setData] = useState({
+    productName:name,
+    category:category,
     name: "",
     contact: "",
     email: "",
@@ -71,7 +73,7 @@ export default function Enquiry({ closeBtn }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [closeBtn]);
-
+  
   return (
     <section className="enquiry-section">
       <div className="enquiry-wrapper">

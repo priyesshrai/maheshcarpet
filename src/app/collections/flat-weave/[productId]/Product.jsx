@@ -36,7 +36,6 @@ export default function Product({ productId }) {
     productId,
     productCategory
   );
-  console.log(data);
 
   return (
     <section className="section">
@@ -125,7 +124,7 @@ export default function Product({ productId }) {
           </div>
         )}
       </div>
-      {enquiryForm && <Enquiry closeBtn={setEnquiryForm} />}
+      {enquiryForm && <Enquiry closeBtn={setEnquiryForm} category={data.category} name={data.name} />}
     </section>
   );
 }

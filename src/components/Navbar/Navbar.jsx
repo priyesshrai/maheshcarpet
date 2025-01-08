@@ -63,9 +63,9 @@ export default function Navbar() {
         </div>
         <ul className="nav-links-container">
           <li className="nav-links">
-            <Link href="/" className={pathname === "/" ? "active-link" : ""}>
+            <a href="/" className={pathname === "/" ? "active-link" : ""}>
               Home
-            </Link>
+            </a>
           </li>
           <li className="nav-links">
             <Link
@@ -127,9 +127,9 @@ export default function Navbar() {
         >
           <ul className="mabile-nav-links-container">
             <li className="nav-links">
-              <Link href="/" className={pathname === "/" ? "active-link" : ""}>
+              <a href="/" className={pathname === "/" ? "active-link" : ""}>
                 <i className="hgi-stroke hgi-home-04" />
-              </Link>
+              </a>
               <span>Home</span>
             </li>
             <li className="nav-links">

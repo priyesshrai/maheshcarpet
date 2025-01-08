@@ -1827,8 +1827,11 @@ footer {
   .product-section .product-body .product-name h1 {
     font-size: 2rem;
   }
-  .single-product-image .relative button{
+  .single-product-image .relative button {
     display: none !important;
+  }
+  .map-section .map-img img {
+    width: 100% !important;
   }
 }
 
@@ -1859,6 +1862,9 @@ footer {
   }
   .product-section {
     margin-top: 70px;
+  }
+  .map-section .map-heading {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -1983,6 +1989,10 @@ footer {
   }
   .product-wraper {
     gap: 10px !important;
+  }
+  .map-section .map-heading {
+    font-size: 1.8rem !important;
+    letter-spacing: -2px
   }
 }
 
@@ -2219,6 +2229,98 @@ footer {
           border: 1px solid var(--dark-font);
         }
       }
+    }
+  }
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+
+  .about-section-first-part {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .about-content {
+      position: relative;
+      flex: 1 0 55%;
+
+      .about-heading {
+        position: relative;
+        width: 100%;
+        font-family: var(--logo-font);
+        font-size: 2.2rem;
+        /* font-weight: 600; */
+        letter-spacing: -2px;
+        color: rgb(44, 44, 44);
+      }
+      .about-para {
+        position: relative;
+        width: 100%;
+        font-family: var(--font-raleway);
+        color: var(--light-dark-font);
+        font-size: 1.1rem;
+        line-height: 1.4;
+      }
+    }
+    .about-image {
+      position: relative;
+      flex: 1 0 43%;
+    }
+  }
+
+  .about-sec-part {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+
+    .about-next-hed {
+      position: relative;
+      width: 100%;
+      font-family: var(--font-raleway);
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .about-para {
+      position: relative;
+      width: 100%;
+      font-family: var(--font-raleway);
+      color: var(--light-dark-font);
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+.map-section {
+  position: relative;
+  width: 100%;
+  margin-top: -20px;
+
+  .map-heading {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: var(--font-jura);
+    font-weight: 700;
+    text-align: center;
+  }
+  .map-img {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 85%;
     }
   }
 }
