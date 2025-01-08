@@ -6,6 +6,45 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-container">
+        <div className="footer-social">
+          <div className="footer-icon">
+            <a
+              href="https://www.linkedin.com/company/mahesh-carpets/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="hgi-stroke hgi-linkedin-02" />
+            </a>
+          </div>
+          <div className="footer-icon">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="hgi-stroke hgi-youtube" />
+            </a>
+          </div>
+          <div className="footer-icon">
+            <a
+              // href="https://www.linkedin.com/company/mahesh-carpets/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="hgi-stroke hgi-facebook-02" />
+            </a>
+          </div>
+          <div className="footer-icon">
+            <a
+              // href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="hgi-stroke hgi-instagram" />
+            </a>
+          </div>
+        </div>
+
         <div className="first-container">
           <div className="footer-container-wraper">
             <div className="footer-logo">
@@ -21,27 +60,6 @@ export default function Footer() {
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
               </p>
-            </div>
-
-            <div className="footer-social">
-              <div className="footer-icon">
-                <Link
-                  href="https://www.linkedin.com/company/mahesh-carpets/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="hgi-stroke hgi-linkedin-02" />
-                </Link>
-              </div>
-              <div className="footer-icon">
-                <Link
-                  href="https://www.youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="hgi-stroke hgi-youtube" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

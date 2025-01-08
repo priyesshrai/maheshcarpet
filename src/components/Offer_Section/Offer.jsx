@@ -48,7 +48,8 @@ export default function Offer() {
               </div>
               <div className="badge-container">
                 <span>60,000</span>
-                <p>sq Feet Total Manufacturing Area</p>
+                <span style={{fontSize:"15px",marginLeft:"3px"}}>sq/ft</span>
+                <p>Manufacturing Area</p>
               </div>
               <div className="badge-container">
                 <span>200+</span>

@@ -69,10 +69,10 @@ export default function Navbar() {
           </li>
           <li className="nav-links">
             <Link
-              href="/about"
-              className={pathname.startsWith("/about") ? "active-link" : ""}
+              href="/our-story"
+              className={pathname.startsWith("/our-story") ? "active-link" : ""}
             >
-              About
+              Our Story
             </Link>
           </li>
           <li className="nav-links">
@@ -134,12 +134,12 @@ export default function Navbar() {
             </li>
             <li className="nav-links">
               <Link
-                href="/about"
-                className={pathname.startsWith("/about") ? "active-link" : ""}
+                href="/our-story"
+                className={pathname.startsWith("/our-story") ? "active-link" : ""}
               >
                 <i className="hgi-stroke hgi-house-01" />
               </Link>
-              <span>About</span>
+              <span>Our Story</span>
             </li>
             <li
               className="nav-links"
