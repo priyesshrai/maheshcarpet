@@ -380,7 +380,7 @@ header {
             align-items: center;
             gap: 10px;
             justify-content: center;
-            font-size: 25px;
+            font-size: 17px;
             transition: background-color 0.3s ease, color 0.3s ease;
             border-radius: 30px;
             border: 1px solid var(--dark-font);
@@ -406,12 +406,13 @@ header {
             }
             &:hover .icon i {
               color: var(--dark-font);
+              font-weight: 600;
             }
             .icon {
               position: relative;
               right: 0px;
-              width: 46px;
-              height: 46px;
+              width: 40px;
+              height: 40px;
               color: var(--light-font);
               background-color: var(--dark-font);
               font-weight: 600;
@@ -424,10 +425,12 @@ header {
               i {
                 font-size: 30px;
                 position: absolute;
+                font-weight: 600;
               }
               .copy {
                 position: absolute;
                 transform: translate(-150%, 150%);
+                font-weight: 600;
               }
               &:hover i:first-child {
                 transition: transform 0.3s ease-in-out;
@@ -437,6 +440,7 @@ header {
                 transition: transform 0.3s ease-in-out 0.1s;
                 transform: translate(0);
                 color: var(--dark-font);
+                font-weight: 600;
               }
             }
           }
@@ -1353,13 +1357,12 @@ footer {
   justify-items: center;
 }
 
-.certificate-wraper a{
+.certificate-wraper a {
   position: relative;
   height: 100px;
   flex: 1 0 150px;
-  
 }
-.certificate-wraper a img{
+.certificate-wraper a img {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
@@ -2338,7 +2341,7 @@ footer {
       align-items: center;
       justify-content: center;
 
-      .map-box{
+      .map-box {
         flex: 1 1 16.66%;
         /* flex : 1; */
         height: 278px;
