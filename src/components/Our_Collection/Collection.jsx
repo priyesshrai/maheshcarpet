@@ -41,7 +41,7 @@ export default function Collection() {
                   </p>
                 </div>
                 <div className="collection-btn">
-                  <Link href="/collection/hand-knotted">
+                  <Link href="/collections/hand-knotted">
                     Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
@@ -78,7 +78,7 @@ export default function Collection() {
                   </p>
                 </div>
                 <div className="collection-btn">
-                  <Link href="/collection/hand-tufted">
+                  <Link href="/collections/hand-tufted">
                     Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
