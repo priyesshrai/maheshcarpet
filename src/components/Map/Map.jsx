@@ -42,153 +42,176 @@ import { motion } from "motion/react";
 
 export default function Map() {
   return (
-    // <section className="section">
-    //   <div className="map-section">
-    //     <div className="map-heading">
-    //       <h2>Our presence</h2>
-    //     </div>
-    //     <div className="map-img">
-    //     </div>
-    //   </div>
-    // </section>
-    <div className=" py-20 dark:bg-black bg-white w-full">
+    <div className=" py-10 px-8 dark:bg-black bg-white w-full">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-black mb-5"style={{fontFamily:"var(--font-jura)"}}>
-          Our presence
+        <p className="font-bold text-4xl dark:text-white text-black" style={{ fontFamily: "var(--font-jura)" }}>
+          <span>
+            Our Presence
+          </span>
         </p>
       </div>
       <WorldMap
         dots={[
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: -41.28, lng: 174.77 },
+            end: { lat: -40.9006, lng: 174.8860 },
             label: "New Zealand"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: -35.30, lng: 149.12 },
+            end: { lat: -33.8688, lng: 151.2093 },
             label: "Australia"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 1.28, lng: 103.85 }, // Singapore
+            end: { lat: 1.3521, lng: 103.8198 },
+            label: "Singapore"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 21.03, lng: 105.85 }, // Vietnam
+            end: { lat: 21.0285, lng: 105.8542 },
+            label: "Vietnam"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 37.55, lng: 126.98 }, // South Korea
+            end: { lat: 37.5665, lng: 126.9780 },
+            label: "South Korea"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 35.68, lng: 139.69 }, // Japan
+            end: { lat: 35.6895, lng: 139.6917 },
+            label: "Japan"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 39.90, lng: 116.40 }, // China
+            end: { lat: 39.9042, lng: 116.4074 },
+            label: "China"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 33.88, lng: 35.50 }, // Lebanon
+            end: { lat: 33.8886, lng: 35.4955 },
+            label: "Lebanon"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: -25.73, lng: 28.22 }, // South Africa
+            end: { lat: -25.7479, lng: 28.2293 },
+            label: "South Africa"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 55.76, lng: 37.62 }, // Russia
+            end: { lat: 55.7558, lng: 37.6173 },
+            label: "Russia"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 41.90, lng: 12.50 }, // Italy
+            end: { lat: 41.9028, lng: 12.4964 },
+            label: "Italy"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 40.38, lng: -3.68 }, // Spain
+            end: { lat: 40.4168, lng: -3.7038 },
+            label: "Spain"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 52.52, lng: 13.40 }, // Germany
+            end: { lat: 52.5200, lng: 13.4050 },
+            label: "Germany"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 48.85, lng: 2.35 }, // France
+            end: { lat: 48.8566, lng: 2.3522 },
+            label: "France"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 48.20, lng: 16.37 }, // Austria
+            end: { lat: 48.2082, lng: 16.3738 },
+            label: "Austria"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 30.05, lng: 31.25 }, // Egypt
+            end: { lat: 30.0444, lng: 31.2357 },
+            label: "Egypt"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 31.77, lng: 35.23 }, // Israel
+            end: { lat: 31.7683, lng: 35.2137 },
+            label: "Israel"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 51.17, lng: 71.43 }, // Kazakhstan
+            end: { lat: 51.1694, lng: 71.4491 },
+            label: "Kazakhstan"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 39.87, lng: 32.85 }, // Turkey
+            end: { lat: 39.9334, lng: 32.8597 },
+            label: "Turkey"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: -15.78, lng: -47.93 }, // Brazil
+            end: { lat: -15.7942, lng: -47.8822 },
+            label: "Brazil"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: -33.45, lng: -70.65 }, // Chile
+            end: { lat: -33.4489, lng: -70.6693 },
+            label: "Chile"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 50.85, lng: 4.35 }, // Belgium
+            end: { lat: 50.8503, lng: 4.3517 },
+            label: "Belgium"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 59.33, lng: 18.07 }, // Sweden
+            end: { lat: 59.3293, lng: 18.0686 },
+            label: "Sweden"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 60.17, lng: 24.93 }, // Finland
+            end: { lat: 60.1695, lng: 24.9354 },
+            label: "Finland"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 45.42, lng: -75.70 }, // Canada
+            end: { lat: 45.4215, lng: -75.6972 },
+            label: "Canada"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 19.43, lng: -99.13 }, // Mexico
+            end: { lat: 19.4326, lng: -99.1332 },
+            label: "Mexico"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 37.97, lng: 23.72 }, // Greece
+            end: { lat: 37.9838, lng: 23.7275 },
+            label: "Greece"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 51.50, lng: -0.12 }, // United Kingdom
+            end: { lat: 51.5074, lng: -0.1278 },
+            label: "United Kingdom"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 35.68, lng: 51.42 }, // Iran
+            end: { lat: 35.6892, lng: 51.3890 },
+            label: "Iran"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 24.47, lng: 54.37 }, // UAE
+            end: { lat: 24.4539, lng: 54.3773 },
+            label: "UAE"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 52.37, lng: 4.89 }, // Netherlands
+            end: { lat: 52.3676, lng: 4.9041 },
+            label: "Netherlands"
           },
           {
             start: { lat: 25.31037917230665, lng: 82.98868979688532 },
-            end: { lat: 55.67, lng: 12.57 }, // Denmark
-          },
+            end: { lat: 55.6761, lng: 12.5683 },
+            label: "Denmark"
+          }
         ]}
       />
     </div>

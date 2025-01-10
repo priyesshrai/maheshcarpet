@@ -1,20 +1,19 @@
-"use client";;
-import { useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
-import Image from "next/image";
-// import { useTheme } from "next-themes";
 
 export default function WorldMap({
   dots = [],
   lineColor = "#0ea5e9"
 }) {
   const svgRef = useRef(null);
-  const map = new DottedMap({ height: 100, grid: "diagonal" });
+  const map = new DottedMap({ height: 110, grid: "diagonal" });
+  console.log(map);
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: "#00000040",
+    color: "#00000060",
     shape: "circle",
     backgroundColor: "white",
   });
@@ -33,17 +32,14 @@ export default function WorldMap({
     const midY = Math.min(start.y, end.y) - 50;
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
-
   return (
     (<div
-      className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans">
-      <Image
+      className="w-full dark:bg-black bg-white rounded-lg  relative font-sans">
+      <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
         alt="world map"
-        height="495"
-        width="1056"
-        draggable={true} />
+        draggable={false} />
       <svg
         ref={svgRef}
         viewBox="0 0 800 400"
@@ -52,7 +48,7 @@ export default function WorldMap({
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           return (
-            (<g key={`path-group-${i}`}>
+            (<g key={`path-group-${i}`} className="map-h">
               <motion.path
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
@@ -70,6 +66,16 @@ export default function WorldMap({
                   ease: "easeOut",
                 }}
                 key={`start-upper-${i}`}></motion.path>
+              <text
+                x={endPoint.x}
+                y={endPoint.y - 10}
+                textAnchor="middle"
+                fontSize="7"
+                fill="black"
+                className="map-label"
+              >
+                {dot.label}
+              </text>
             </g>)
           );
         })}
@@ -118,7 +124,8 @@ export default function WorldMap({
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
                 r="2"
-                fill={lineColor} />
+                fill={lineColor}
+                />
               <circle
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
@@ -143,6 +150,7 @@ export default function WorldMap({
             </g>
           </g>
         ))}
+
       </svg>
     </div>)
   );
