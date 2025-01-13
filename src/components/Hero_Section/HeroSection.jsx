@@ -1,26 +1,8 @@
 // "use client";
 import Image from "next/image";
 import React from "react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroSection() {
-  // useEffect(() => {
-  //   gsap.to(".hero-image", {
-  //     scrollTrigger: {
-  //       trigger: ".hero-image",
-  //       start: "top 50%",
-  //       end: "top -20%",
-  //       scrub: 1,
-  //       scroller: "body",
-  //     },
-  //     height: "45vw",
-  //     borderRadius: "1.5vw",
-  //     width: "80vw",
-  //   });
-  // }, []);
 
   return (
     <section className="section">
@@ -41,16 +23,6 @@ export default function HeroSection() {
             everywhere.
           </p>
         </div>
-        {/* <div className="hero-image-container">
-          <div className="hero-image">
-            <Image
-                src="/images/hero-img-3.jpg"
-                alt="Hero Image"
-                width={5000}
-                height={5000}
-              />
-          </div>
-        </div> */}
       </div>
     </section>
   );
