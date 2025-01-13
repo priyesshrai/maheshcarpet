@@ -67,7 +67,7 @@ export default function WorldMap({
                 }}
                 key={`start-upper-${i}`}></motion.path>
               <text
-                x={endPoint.x}
+                x={endPoint.x -10}
                 y={endPoint.y - 10}
                 textAnchor="middle"
                 fontSize="7"

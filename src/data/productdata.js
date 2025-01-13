@@ -581,3 +581,39 @@ export const shaggy = [
     material: "NA",
   },
 ];
+
+export const handKnotted = [
+  {
+    id: "pc-mcm-69",
+    src: "/images/hand-knotted/03.jpg",
+    alt: "A Beige Multi hand knotted product",
+    name: "PC-MCM-69",
+    color: "Beige Multi",
+    category: "hand knotted",
+    uri: "pc-mcm-69",
+    collection: "Pristine",
+    material: "Bamboo Silk 80% & Cotton 20%",
+  },
+  {
+    id: "pc-mcm-59",
+    src: "/images/hand-knotted/02.jpg",
+    alt: "A Blue Silver hand knotted product",
+    name: "PC-MCM-59",
+    color: "Blue Silver",
+    category: "hand knotted",
+    uri: "pc-mcm-59",
+    collection: "Pristine",
+    material: "Wool 40% & Bamboo Silk 40%",
+  },
+  {
+    id: "pc-mcm-51",
+    src: "/images/hand-knotted/01.jpg",
+    alt: "A Camel Brown hand knotted product",
+    name: "PC-MCM-51",
+    color: "Camel Brown",
+    category: "hand knotted",
+    uri: "pc-mcm-51",
+    collection: "Pristine",
+    material: "Wool 40% & Bamboo Silk 40%",
+  },
+];

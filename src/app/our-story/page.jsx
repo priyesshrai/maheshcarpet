@@ -19,7 +19,7 @@ export default function page() {
                 <strong>Mr. Maniessh Maheshwari</strong> leading the way to
                 elevate the brand to new heights. Nestled on the serene banks of
                 the Ganges in Varanasi—a city renowned for its rich cultural
-                heritage—we bring over 46 years of expertise to every piece we
+                heritage—we bring over 50 years of expertise to every piece we
                 create.
               </p>
               <br />
