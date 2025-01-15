@@ -8,7 +8,7 @@ export default function page() {
     axios.get("/api/contact")
   },[])
   return (
-    <section className='section'>
+    <section className=''>
       
     </section>
   )

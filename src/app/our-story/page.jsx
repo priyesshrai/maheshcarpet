@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function page() {
@@ -88,6 +89,59 @@ export default function page() {
             <strong>
               Discover a world where craftsmanship meets imagination.
             </strong>
+          </div>
+        </div>
+
+        <div className="membership-container">
+          <div className="certificate-section">
+            <div className="benefit-heading">
+              <h2>Memberships</h2>
+              <p>"Trusted Partnerships, Certified Excellence"</p>
+            </div>
+
+            <div className="certificate-desc">
+              <p>
+                The memberships signify that the company adheres to the highest industry standards, ensuring quality, ethical practices, and compliance with global export norms. This translates to confidence in receiving superior products crafted with precision and backed by certified excellence. Furthermore, our association with these reputed bodies highlights our commitment to continuous improvement, innovation, and responsible business practices, offering customers the assurance of partnering with a reliable and globally recognized brand. The memberships provide the company with access to global markets, trade fairs, and networking opportunities, enhancing its visibility among international buyers.
+              </p>
+            </div>
+
+            <div className="certificate-container">
+              <div className="certificate-wraper">
+                <a
+                  href="https://www.epch.in/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/certificates/1.jpg"
+                    width={200}
+                    height={200}
+                    alt="certificate1"
+                    style={{ height: "100%" }}
+                  />
+                </a>
+                <a
+                  href="http://cepc.co.in/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/certificates/2.jpg"
+                    width={200}
+                    height={200}
+                    alt="certificate1"
+                    style={{ height: "100%" }}
+                  />
+                </a>
+                <a href="https://msme.gov.in/" target="_blank">
+                  <Image
+                    src="/images/certificates/3.png"
+                    width={200}
+                    height={200}
+                    alt="certificate1"
+                    style={{ height: "100%" }}
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

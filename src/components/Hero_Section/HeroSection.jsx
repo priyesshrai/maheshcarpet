@@ -5,7 +5,7 @@ import React from "react";
 export default function HeroSection() {
 
   return (
-    <section className="section">
+    <section className="">
       <div className="hero-vdo-container">
         <div className="hero-vdo">
           <video preload="none" autoPlay loop muted playsInline>
@@ -13,7 +13,7 @@ export default function HeroSection() {
           </video>
         </div>
       </div>
-      <div className="hero-section" style={{ padding: "146px 0" }}>
+      {/* <div className="hero-section" style={{ padding: "146px 0" }}>
         <div className="hero-heading">
           <h1>Great Collection of Vintage Rugs with a Legacy of 25 Years</h1>
         </div>
@@ -23,7 +23,8 @@ export default function HeroSection() {
             everywhere.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
+  

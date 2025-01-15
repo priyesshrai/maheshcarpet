@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Certificates() {
   return (
-    <section className="section" style={{ paddingTop: "20px" }}>
+    <section className="section" style={{ paddingTop: "20px" }} id="compliance">
       <div className="certificate-section">
         <div className="benefit-heading">
           <h2>Our Certificate</h2>

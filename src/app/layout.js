@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footor/Footer";
 import ContactUs from "@/components/Contact_us/ContactUs";
+import { IBM_Plex_Sans } from "next/font/google";
 
 const jura = Jura({
   subsets: ["latin"],
@@ -22,6 +23,13 @@ const raleway = Raleway({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-raleway",
 });
+
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-ibm",
+});
+
 const yatraOne = Yatra_One({
   subsets: ["latin"],
   weight: "400",
@@ -45,7 +53,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable}`}
+        className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable} ${ibmPlexSans.variable}`}
       >
         <ReactLenis root>
           <main className="main">
