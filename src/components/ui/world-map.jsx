@@ -66,7 +66,7 @@ export default function WorldMap({
                   ease: "easeOut",
                 }}
                 key={`start-upper-${i}`}></motion.path>
-              <text
+              {/* <text
                 x={endPoint.x -10}
                 y={endPoint.y - 10}
                 textAnchor="middle"
@@ -75,7 +75,7 @@ export default function WorldMap({
                 className="map-label"
               >
                 {dot.label}
-              </text>
+              </text> */}
             </g>)
           );
         })}
