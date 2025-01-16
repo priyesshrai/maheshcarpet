@@ -179,6 +179,10 @@ header {
             align-items: flex-start;
             gap: 15px;
 
+            li{
+              width: 100%;
+            }
+
             li a {
               padding: 10px 15px;
               border-radius: 5px;
@@ -923,9 +927,9 @@ footer {
       }
 
       .footer-description {
-        font-family: var(--font-raleway);
-        margin-top: 20px;
-        font-size: 15px;
+        font-family: var(--font-ibm);
+        margin-top: 5px;
+        font-size: 20px;
       }
     }
   }
@@ -1470,7 +1474,6 @@ footer {
   display: none;
 }
 
-
 .enquiry-section {
   position: fixed;
   inset: 0 0 0 0;
@@ -1701,7 +1704,6 @@ footer {
   width: 100%;
   margin-top: 50px;
 }
-
 
 @media (max-width: 1024px) {
   .section {
@@ -2185,7 +2187,7 @@ footer {
   .trade-show-img-container .trade-show-img-wraper {
     columns: 2;
   }
-  .blank{
+  .blank {
     display: none;
   }
 }
@@ -2250,7 +2252,7 @@ footer {
   .map-section .map-heading {
     font-size: 2.5rem !important;
   }
-  .our-sty{
+  .our-sty {
     padding: 20px !important;
   }
 }
@@ -2542,4 +2544,3 @@ footer {
     width: 120px;
   }
 }
-

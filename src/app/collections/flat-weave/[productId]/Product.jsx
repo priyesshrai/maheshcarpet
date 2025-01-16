@@ -12,7 +12,8 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
-import Enquiry from "@/components/ProductEnquiry/Enquiry";
+const Enquiry = dynamic(()=>import("@/components/ProductEnquiry/Enquiry"),{loading:()=><Loader/>});
+import dynamic from "next/dynamic";
 import Fancybox from "@/components/ImageZoom/Fancybox";
 
 export default function Product({ productId }) {

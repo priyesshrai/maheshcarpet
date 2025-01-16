@@ -12,8 +12,9 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Loader from "@/components/Loader/Loader";
-import Enquiry from "@/components/ProductEnquiry/Enquiry";
+const Enquiry = dynamic(()=>import("@/components/ProductEnquiry/Enquiry"),{loading:()=><Loader/>});
 import Fancybox from "@/components/ImageZoom/Fancybox";
+import dynamic from "next/dynamic";
 
 export default function Product({ productId }) {
   const pathname = usePathname();

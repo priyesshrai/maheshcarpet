@@ -1,44 +1,7 @@
-// import Image from "next/image";
-// import React from "react";
-
-// export default function Map() {
-//   return (
-//     <section className="section">
-//       <div className="map-section">
-//         <div className="map-heading">
-//           <h2>Our presence</h2>
-//         </div>
-//         <div className="map-img">
-//           <Image
-//             src="/images/map.png"
-//             width={5000}
-//             height={5000}
-//             alt="country we serve."
-//           />
-//           {/* <div className="map-overlay">
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//             <div className="map-box"></div>
-//           </div> */}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
 "use client";
-import WorldMap from "@/components/ui/world-map";
-import { motion } from "motion/react";
+import dynamic from "next/dynamic";
+import Loader from "../Loader/Loader";
+const WorldMap = dynamic(() => import("@/components/ui/world-map"), { loading: () => <Loader /> });
 
 export default function Map() {
   return (

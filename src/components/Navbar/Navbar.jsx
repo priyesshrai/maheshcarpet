@@ -86,14 +86,16 @@ export default function Navbar() {
               </ul>
             </div>
           </li>
-          <li className="nav-links">
-            <Link
-              href="#compliance"
-              className={activeHash === "#compliance" ? "active-link" : ""}
-            >
-              Compliance
-            </Link>
-          </li>
+          {pathname === '/' && (
+            <li className="nav-links">
+              <Link
+                href="#compliance"
+                className={activeHash === "#compliance" ? "active-link" : ""}
+              >
+                Compliance
+              </Link>
+            </li>
+          )}
           <li className="nav-links">
             <Link
               href="/contact"
@@ -172,15 +174,17 @@ export default function Navbar() {
               </div>
             </li>
 
-            <li className="nav-links">
-              <Link
-                href="#compliance"
-                className={activeHash === "#compliance" ? "active-link" : ""}
-              >
-                <i className="hgi-stroke hgi-certificate-02" />
-              </Link>
-              <span>Compliance</span>
-            </li>
+            {pathname === '/' && (
+              <li className="nav-links">
+                <Link
+                  href="#compliance"
+                  className={activeHash === "#compliance" ? "active-link" : ""}
+                >
+                  <i className="hgi-stroke hgi-certificate-02" />
+                </Link>
+                <span>Compliance</span>
+              </li>
+            )}
 
             <li className="nav-links">
               <Link

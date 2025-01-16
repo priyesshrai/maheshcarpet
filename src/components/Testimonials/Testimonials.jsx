@@ -4,7 +4,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import Image from "next/image";
 import Fancybox from "../ImageZoom/Fancybox";
 
-export function Testimonials() {
+export default function Testimonials() {
   return (
     <section className="section">
       <div className="testimonials-section">

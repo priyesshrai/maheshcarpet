@@ -1,24 +1,54 @@
-import Certificates from '@/components/Certificates/Certificates'
-import HeroSection from '@/components/Hero_Section/HeroSection'
-import Map from '@/components/Map/Map'
-import Offer from '@/components/Offer_Section/Offer'
-import Benefits from '@/components/Our_Benefits/Benefits'
-import Collection from '@/components/Our_Collection/Collection'
-import Slider from '@/components/Slider/Slider'
-import { Testimonials } from '@/components/Testimonials/Testimonials'
-import React from 'react'
+import dynamic from "next/dynamic";
+
+const HeroSection = dynamic(
+  () => import("@/components/Hero_Section/HeroSection"),
+  {
+    loading: () => <Loader />,
+  }
+);
+const Collection = dynamic(
+  () => import("@/components/Our_Collection/Collection"),
+  {
+    loading: () => <Loader />,
+  }
+);
+const Slider = dynamic(() => import("@/components/Slider/Slider"), {
+  loading: () => <Loader />,
+});
+const Benefits = dynamic(() => import("@/components/Our_Benefits/Benefits"), {
+  loading: () => <Loader />,
+});
+const Certificates = dynamic(
+  () => import("@/components/Certificates/Certificates"),
+  {
+    loading: () => <Loader />,
+  }
+);
+const Offer = dynamic(() => import("@/components/Offer_Section/Offer"), {
+  loading: () => <Loader />,
+});
+const Testimonials = dynamic(
+  () => import("@/components/Testimonials/Testimonials"),
+  {
+    loading: () => <Loader />,
+  }
+);
+const Map = dynamic(() => import("@/components/Map/Map"), {
+  loading: () => <Loader />,
+});
+import Loader from "@/components/Loader/Loader";
 
 export default function page() {
   return (
     <>
-      <HeroSection/>
-      <Collection/>
-      <Slider/>
-      <Benefits/>
-      <Certificates/>
-      <Offer/>
-      <Testimonials/>
+      <HeroSection />
+      <Collection />
+      <Slider />
+      <Benefits />
+      <Certificates />
+      <Offer />
+      <Testimonials />
       <Map/>
     </>
-  )
+  );
 }

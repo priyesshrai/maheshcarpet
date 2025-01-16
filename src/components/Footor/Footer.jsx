@@ -56,6 +56,7 @@ export default function Footer() {
               />
             </div>
             {/* <div className="footer-description">
+              <h2>MAHESH CARPETs</h2>
               <p>
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.

@@ -1,11 +1,12 @@
+import dynamic from "next/dynamic";
 import { Jura } from "next/font/google";
 import { Akaya_Kanadaka } from "next/font/google";
 import { Yatra_One } from "next/font/google";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footor/Footer";
-import ContactUs from "@/components/Contact_us/ContactUs";
+const Navbar = dynamic(() => import("@/components/Navbar/Navbar"));
+const Footer = dynamic(() => import("@/components/Footor/Footer"));
+const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
 
 const jura = Jura({
