@@ -93,7 +93,7 @@ export default function page() {
         </div>
 
         <div className="membership-container">
-          <div className="certificate-section">
+          <div className="certificate-section our-sty">
             <div className="benefit-heading">
               <h2>Memberships</h2>
               <p>"Trusted Partnerships, Certified Excellence"</p>

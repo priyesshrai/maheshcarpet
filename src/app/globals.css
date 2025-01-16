@@ -2185,6 +2185,9 @@ footer {
   .trade-show-img-container .trade-show-img-wraper {
     columns: 2;
   }
+  .blank{
+    display: none;
+  }
 }
 
 /* @media (max-width:720px) {
@@ -2246,6 +2249,9 @@ footer {
   }
   .map-section .map-heading {
     font-size: 2.5rem !important;
+  }
+  .our-sty{
+    padding: 20px !important;
   }
 }
 
