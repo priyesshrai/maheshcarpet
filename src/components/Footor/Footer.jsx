@@ -7,40 +7,47 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-social">
-          <div className="footer-icon">
+          <div className="footer-icon" style={{ borderColor: "#0A66C2" }}>
             <a
               href="https://www.linkedin.com/company/mahesh-carpets/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="hgi-stroke hgi-linkedin-02" />
+              <i className="hgi-stroke hgi-linkedin-02" style={{ color: "#0A66C2" }} />
             </a>
           </div>
-          <div className="footer-icon">
+
+          <div className="footer-icon" style={{ borderColor: "#FF0033" }}>
             <a
               href="https://www.youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="hgi-stroke hgi-youtube" />
+              <i className="hgi-stroke hgi-youtube" style={{ color: "#FF0033" }} />
             </a>
           </div>
-          <div className="footer-icon">
+
+          <div className="footer-icon" style={{ borderColor: "#0A66C2" }}>
             <a
               // href="https://www.linkedin.com/company/mahesh-carpets/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="hgi-stroke hgi-facebook-02" />
+              <i className="hgi-stroke hgi-facebook-02" style={{ color: "#0A66C2" }} />
             </a>
           </div>
-          <div className="footer-icon">
+
+          <div className="footer-icon" style={{ borderColor: "#dc2743" }}>
             <a
               // href="https://www.youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="hgi-stroke hgi-instagram" />
+              <i className="hgi-stroke hgi-instagram" style={{
+                background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }} />
             </a>
           </div>
         </div>
@@ -49,7 +56,7 @@ export default function Footer() {
           <div className="footer-container-wraper">
             <div className="footer-logo">
               <Image
-                src="/images/logo.png"
+                src="/images/logo/logo-01.jpeg"
                 alt="logo"
                 width={180}
                 height={80}

@@ -101,7 +101,7 @@ export default function Navbar() {
               href="/contact"
               className={pathname.startsWith("/contact") ? "active-link" : ""}
             >
-              Contact
+              Contact Us
             </Link>
           </li>
         </ul>
@@ -193,7 +193,7 @@ export default function Navbar() {
               >
                 <i className="hgi-stroke hgi-add-team" />
               </Link>
-              <span>Contact</span>
+              <span>Contact Us</span>
             </li>
           </ul>
         </div>
