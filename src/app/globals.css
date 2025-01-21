@@ -2544,3 +2544,61 @@ footer {
     width: 120px;
   }
 }
+
+.section-wraper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .section-wraper-box{
+    position: relative;
+    flex: 1 0 300px;
+    padding: 10px;
+
+    .location-container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #dadada;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+
+      .location-heading{
+        position: relative;
+        width: 100%;
+        margin-bottom: 9px;
+
+        h5{
+          color: #383838;
+          font-size: 20px;
+          font-family: var(--font-raleway);
+          /* font-weight: 600; */
+          letter-spacing: 0.4px;
+          line-height: 1;
+        }
+      }
+      p{
+        font-family: var(--font-raleway);
+        color: #4d4d4d;
+      }
+
+      span{
+        display: block;
+        margin-top: 7px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        i{
+          font-size: 25px;
+          color: royalblue;
+        }
+      }
+    }
+  }
+}
