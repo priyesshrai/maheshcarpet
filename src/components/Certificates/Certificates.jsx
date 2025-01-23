@@ -53,7 +53,7 @@ export default function Certificates() {
                 alt="certificate1"
               />
             </a>
-            <a href="https://www.bhadohicarpets.com/" target="_blank">
+            <a>
               <Image
                 src="/images/certificates/Handmade.jpg"
                 width={200}

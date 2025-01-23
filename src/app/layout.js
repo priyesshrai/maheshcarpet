@@ -8,6 +8,7 @@ const Navbar = dynamic(() => import("@/components/Navbar/Navbar"));
 const Footer = dynamic(() => import("@/components/Footor/Footer"));
 const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
+import Providers from "@/components/Nprogress";
 
 const jura = Jura({
   subsets: ["latin"],
@@ -59,7 +60,7 @@ export default function RootLayout({ children }) {
         <ReactLenis root>
           <main className="main">
             <Navbar />
-            {children}
+            <Providers>{children}</Providers>
             <ContactUs />
             <Footer />
           </main>

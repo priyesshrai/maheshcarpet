@@ -26,7 +26,9 @@ export default function Navbar() {
       <nav>
         <div className="logo-container">
           <div className="logo-wraper">
-            <Image src="/images/logo/logo-01.jpeg" alt="logo" width={200} height={200} />
+            <a href="/">
+              <Image src="/images/logo/logo-01.jpeg" alt="logo" width={200} height={200} />
+            </a>
 
             <div className="new-na">
               <a href="/">
