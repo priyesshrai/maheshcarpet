@@ -7,7 +7,7 @@ export default function Map() {
   return (
     <div className=" py-10 px-8 dark:bg-black bg-white w-full">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-4xl dark:text-white text-black" style={{ fontFamily: "var(--font-jura)" }}>
+        <p className="font-bold text-6xl dark:text-white text-black" style={{ fontFamily: "var(--font-jura)" }}>
           <span>
             Our Presence
           </span>

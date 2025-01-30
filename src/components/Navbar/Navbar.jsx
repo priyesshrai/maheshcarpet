@@ -42,14 +42,14 @@ export default function Navbar() {
         </div>
         <ul className="nav-links-container">
           <li className="nav-links">
-            <a href="/" className={pathname === "/" ? "active-link" : ""}>
+            <a href="/" className={`${pathname === "/" ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}>
               Home
             </a>
           </li>
           <li className="nav-links">
             <Link
               href="/our-story"
-              className={pathname.startsWith("/our-story") ? "active-link" : ""}
+              className={`${pathname.startsWith("/our-story") ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}
             >
               Our Story
             </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <li className="nav-links">
             <Link
               href="#"
-              className={pathname.startsWith("/collections") ? "active-link" : ""
+              className={`${pathname.startsWith("/collections") ? "active-link" : ""} ${pathname === '/' && 'chCol'}`
               }
             >
               collections
@@ -92,7 +92,7 @@ export default function Navbar() {
             <li className="nav-links">
               <Link
                 href="#compliance"
-                className={activeHash === "#compliance" ? "active-link" : ""}
+                className={`${activeHash === "#compliance" ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}
               >
                 Compliance
               </Link>
@@ -101,7 +101,7 @@ export default function Navbar() {
           <li className="nav-links">
             <Link
               href="/contact"
-              className={pathname.startsWith("/contact") ? "active-link" : ""}
+              className={`${pathname.startsWith("/contact") ? "active-link" : ""} ${pathname === '/' && 'chCol'}`}
             >
               Contact Us
             </Link>

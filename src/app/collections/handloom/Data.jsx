@@ -42,16 +42,24 @@ export default function Data() {
         </div> */}
 
         <div className="product-desc">
-          <div className="product-title">
-            <h1>HandLoom Construction</h1>
-          </div>
-          <div className="product-content">
-            <p>
-              A versatile weaving technique where artisans weave yarns on loom
-              to create intricate designs. The construction is known for their
-              clean lines, geometric patterns, and contemporary aesthetics. A
-              perfect blend of traditional craftsmanship with modern style.
-            </p>
+          <div className="pro-details-container">
+
+            <div className="pro-text-container">
+              <div className="product-title">
+                <h1>HandLoom</h1>
+              </div>
+              <div className="product-content">
+                <p>
+                  A versatile weaving technique where artisans weave yarns on loom
+                  to create intricate designs. The construction is known for their
+                  clean lines, geometric patterns, and contemporary aesthetics. A
+                  perfect blend of traditional craftsmanship with modern style.
+                </p>
+              </div>
+            </div>
+            <div className="product-banner">
+              <Image src='/images/handloom/banner.jpg' width={1000} height={1000} alt="handloom banner" />
+            </div>
           </div>
         </div>
 

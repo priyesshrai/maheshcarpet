@@ -7,12 +7,11 @@ export default function Collection() {
     <section className="section" style={{ backgroundColor: "#fff" }}>
       <div className="collection-section">
         <div className="collection-heading">
-          <h2>Discover Our Exquisite Collection of Carpets & Rugs.</h2>
+          <h2>Step into the luxury, where comfort meets style, one weave at a time </h2>
         </div>
         <div className="collection-sub-heading">
-          <p style={{ fontSize: "1.8vw", color:"#1e1e1e" }}>
-            Transform Your Space with Timeless Elegance of Premium Carpets and
-            Rugs.
+          <p style={{ fontSize: "1.2vw", color: "#1e1e1e" }}>
+            Discover a world of elegance and craftsmanship with our meticulously designed carpets and rugs. Whether you seek timeless artistry or modern sophistication, our collection offers unmatched quality to elevate every space.
           </p>
         </div>
 
@@ -34,15 +33,8 @@ export default function Collection() {
                     <span>Hand Knotted</span>
                   </Link>
                 </div>
-                <div className="collection-description">
-                  <p>
-                    Their textured look, elaborate designs and advanced hand
-                    weaving technology makes it an epitome of beauty.
-                  </p>
-                </div>
                 <div className="collection-btn">
                   <Link href="/collections/hand-knotted">
-                    Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -70,16 +62,8 @@ export default function Collection() {
                     <span>Hand Tufted</span>
                   </Link>
                 </div>
-                <div className="collection-description">
-                  <p>
-                    Hand Tufted Carpet is mainly made of hand-operated tools.and
-                    with our unique designs,the most artistic carpets are
-                    manufactured.
-                  </p>
-                </div>
                 <div className="collection-btn">
                   <Link href="/collections/hand-tufted">
-                    Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -107,15 +91,9 @@ export default function Collection() {
                     <span>Loom Knotted</span>
                   </Link>
                 </div>
-                <div className="collection-description">
-                  <p>
-                    Designed to stir emotion, brought to life unlike any other.
-                    The loom knotted carpet, woven to perfection inch by inch.
-                  </p>
-                </div>
+
                 <div className="collection-btn">
                   <Link href="/collection/loom-knotted">
-                    Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -143,15 +121,8 @@ export default function Collection() {
                     <span>Indo-Tibetan</span>
                   </Link>
                 </div>
-                <div className="collection-description">
-                  <p>
-                    The Indo-Tibetan carpet, crafted with care and technique
-                    resulting in lovely aesthetic carpets.
-                  </p>
-                </div>
                 <div className="collection-btn">
                   <Link href="/collection/indo-tibetan">
-                    Explore Now
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -161,6 +132,7 @@ export default function Collection() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

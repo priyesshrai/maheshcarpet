@@ -5,7 +5,7 @@ export default function Benefits() {
     <section className="section">
       <div className="benefit-section">
         <div className="benefit-heading">
-          <h2>Why We’re the Best Choice</h2>
+          <h2>Excellence in Every Thread</h2>
         </div>
 
         <div className="benefit-container">
@@ -15,12 +15,11 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Great Collection</h3>
+                <h3>A World of Choices</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  Explore an extensive range of rugs and carpets, curated to
-                  suit every taste and style.
+                  A curated selection of premium rugs and carpets designed to complement every space and style.
                 </p>
               </div>
             </div>
@@ -32,12 +31,11 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Contemporary Designs</h3>
+                <h3>Chic & Contemporary</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  Modern and sleek designs that bring a touch of elegance to
-                  your living spaces.
+                  Modern designs that bring refined elegance to your interiors.
                 </p>
               </div>
             </div>
@@ -49,12 +47,11 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Traditional Designs</h3>
+                <h3>Heritage with a Story</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  Timeless patterns inspired by heritage, adding charm and
-                  character to your home.
+                  Classic, timeless designs inspired by tradition, adding warmth and character to your home.
                 </p>
               </div>
             </div>
@@ -66,12 +63,11 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Transitional Designs</h3>
+                <h3>The Perfect Blend</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  A perfect blend of classic and modern styles, offering
-                  versatile options for any decor.
+                  Versatile styles that harmoniously combine traditional and modern aesthetics for any décor.
                 </p>
               </div>
             </div>
@@ -83,12 +79,11 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Easy Maintenance</h3>
+                <h3>Sustainably Woven</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  Durable and easy-to-clean materials designed for hassle-free
-                  upkeep.
+                  Combining artistry with responsible practices for lasting impact.
                 </p>
               </div>
             </div>
@@ -100,35 +95,33 @@ export default function Benefits() {
             </div>
             <div className="benefit-card-details">
               <div className="benefit-card-heading">
-                <h3>Indoor Flooring</h3>
+                <h3>Woven with Integrity</h3>
               </div>
               <div className="benefit-card-description">
                 <p>
-                  High-quality flooring solutions that enhance the comfort and
-                  aesthetics of your interiors.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="benefit-card">
-            <div className="benefit-card-image">
-              <i class="hgi-stroke hgi-house-02" />
-            </div>
-            <div className="benefit-card-details">
-              <div className="benefit-card-heading">
-                <h3>Outdoor Flooring</h3>
-              </div>
-              <div className="benefit-card-description">
-                <p>
-                  Durable and weather-resistant flooring options to elevate your
-                  outdoor spaces with style.
+                  Ensuring quality, compliance, and respect for tradition.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="benefit-card">
+            <div className="benefit-card-image">
+              <i className="hgi-stroke hgi-house-02" />
+            </div>
+            <div className="benefit-card-details">
+              <div className="benefit-card-heading">
+                <h3>Empowering Weavers</h3>
+              </div>
+              <div className="benefit-card-description">
+                <p>
+                  Supporting communities through fair trade and compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="benefit-card">
             <div className="benefit-card-image">
               <i class="hgi-stroke hgi-truck-delivery" />
             </div>
