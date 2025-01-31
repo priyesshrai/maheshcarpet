@@ -105,7 +105,7 @@ export default function Benefits() {
             </div>
           </div>
 
-          <div className="benefit-card">
+          {/* <div className="benefit-card">
             <div className="benefit-card-image">
               <i className="hgi-stroke hgi-house-02" />
             </div>
@@ -119,7 +119,7 @@ export default function Benefits() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="benefit-card">
             <div className="benefit-card-image">
