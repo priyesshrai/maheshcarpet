@@ -132,11 +132,11 @@ export default function ContactUs() {
             <div className="form-row">
               <div className="form-column">
                 <label htmlFor="message" className="form-label">
-                  Describe your issue
+                  Describe your Enquiry
                 </label>
                 <textarea
                   id="message"
-                  placeholder="Describe your issue"
+                  placeholder="Describe your Enquiry..."
                   rows="4"
                   className="form-textarea"
                   value={data.message}

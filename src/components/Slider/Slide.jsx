@@ -11,12 +11,17 @@ import {
 import Image from "next/image";
 
 const images = [
-  { src: "/images/hero-img.jpg", alt: "Hero Image 1" },
-  { src: "/images/hero-img-2.jpg", alt: "Hero Image 2" },
-  { src: "/images/hero-img-3.jpg", alt: "Hero Image 3" },
-  { src: "/images/hero-img-4.jpg", alt: "Hero Image 4" },
-  { src: "/images/hero-img-5.jpg", alt: "Hero Image 5" },
-  { src: "/images/hero-img-6.jpg", alt: "Hero Image 6" },
+  { src: "/images/gallery/gallery-pic-01.jpg", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-02.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-03.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-04.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-05.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-06.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-07.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-08.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-09.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-10.png", alt: "Gallery Picture" },
+  { src: "/images/gallery/gallery-pic-11.png", alt: "Gallery Picture" },
 ];
 
 export default function Slide() {

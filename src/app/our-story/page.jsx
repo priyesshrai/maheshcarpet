@@ -61,7 +61,7 @@ export default function page() {
             </p>
             <ol start="I">
               <li>I. Plush cushions</li>
-              <li>II. Plush cushions</li>
+              <li>II. Wall Arts</li>
               <li>III. Versatile ottomans</li>
             </ol>
           </div>

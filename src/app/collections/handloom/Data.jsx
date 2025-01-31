@@ -43,10 +43,12 @@ export default function Data() {
 
         <div className="product-desc">
           <div className="pro-details-container">
-
             <div className="pro-text-container">
               <div className="product-title">
                 <h1>HandLoom</h1>
+              </div>
+              <div className="product-banner">
+                <Image src='/images/handloom/banner.jpg' width={1000} height={1000} alt="handloom banner" />
               </div>
               <div className="product-content">
                 <p>
@@ -56,9 +58,6 @@ export default function Data() {
                   perfect blend of traditional craftsmanship with modern style.
                 </p>
               </div>
-            </div>
-            <div className="product-banner">
-              <Image src='/images/handloom/banner.jpg' width={1000} height={1000} alt="handloom banner" />
             </div>
           </div>
         </div>

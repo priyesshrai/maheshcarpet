@@ -255,7 +255,7 @@ header {
   .hero-heading,
   .collection-heading {
     position: relative;
-    max-width: 65rem;
+    /* max-width: 65rem; */
 
     h1 {
       font-size: 4.5rem;
@@ -276,7 +276,7 @@ header {
   .hero-sub-heading,
   .collection-sub-heading {
     position: relative;
-    max-width: 60rem;
+    /* max-width: 60rem; */
     margin-top: 15px;
 
     p {
@@ -368,8 +368,8 @@ header {
 
   .collection-cards {
     position: relative;
-    flex: 1 0 15rem;
-    height: 20rem;
+    flex: 1 1 25rem;
+    height: 22rem;
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid #dadada;
@@ -410,7 +410,7 @@ header {
         border-radius: 10px;
         overflow: hidden;
 
-        &::before {
+        /* &::before {
           content: "";
           position: absolute;
           width: 100%;
@@ -422,7 +422,7 @@ header {
             rgba(0, 0, 0, 0.452),
             transparent
           );
-        }
+        } */
         &::after {
           content: "";
           position: absolute;
@@ -674,8 +674,7 @@ header {
   /* justify-content: center; */
   /* align-items: center; */
   flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 50px;
+  margin-top: 15px;
 
   .offer-image-section {
     position: relative;
@@ -721,7 +720,7 @@ header {
 
       .badge-container {
         position: relative;
-        flex: 0 0 220px;
+        flex: 0 0 calc(97% / 4);
         background-color: var(--dark-font);
         border-radius: 10px;
         color: var(--light-font);
@@ -1195,25 +1194,30 @@ footer {
     margin-bottom: 20px;
     border-radius: 20px;
     background-color: #e9e9e9;
+    padding: 20px;
 
-    .pro-details-container{
+    .pro-details-container {
       position: relative;
       width: 100%;
       height: 100%;
-      padding: 40px 30px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
     }
 
-    .pro-text-container{
-      flex: 0 0 500px;
+    .pro-text-container {
       position: relative;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap:13px;
     }
 
-    .product-banner img{
+    .product-banner{
+      position: relative;
+      width: 100%;
+    }
+    .product-banner img {
       border-radius: 20px;
+      width: 100%;
     }
 
     .product-title {
@@ -1226,6 +1230,7 @@ footer {
       letter-spacing: -2px;
       color: #353535;
       line-height: 1;
+      text-align: center;
     }
     .product-content {
       position: relative;
@@ -1957,6 +1962,11 @@ footer {
     flex: 1 0 225px;
     height: 380px;
   }
+
+  .collection-cards-container .collection-cards {
+    flex: 1 1 18rem;
+    height: 15rem;
+  }
 }
 
 @media (max-width: 882px) {
@@ -2053,7 +2063,7 @@ footer {
     .offer-details-section
     .details-badge-container
     .badge-container {
-    height: 5.8rem;
+    height: 7.8rem;
   }
   .testimonials-section {
     margin-top: 40px;
@@ -2205,6 +2215,11 @@ footer {
   .our-sty {
     padding: 20px !important;
   }
+
+  .collection-cards-container .collection-cards {
+    flex: 1 1 15rem;
+    height: 12rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2250,7 +2265,7 @@ footer {
     margin-top: 40px;
   }
   .offer-section .benefit-heading h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   .offer-container .offer-image-section {
     flex: 1 0 315px;
@@ -2322,7 +2337,7 @@ footer {
     padding: 245px 0 !important;
   }
   .collection-section .collection-heading h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .collection-section .collection-sub-heading {
     margin-top: 20px;
@@ -2350,7 +2365,7 @@ footer {
     width: 110px;
   }
   .offer-section .benefit-heading h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .mobile-navigation .mabile-nav-links-container .nav-links span {
     font-size: 10px;
@@ -2494,6 +2509,3 @@ footer {
 .chCol {
   color: var(--light-font) !important;
 }
-
-
-

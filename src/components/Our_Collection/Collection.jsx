@@ -16,11 +16,12 @@ export default function Collection() {
         </div>
 
         <div className="collection-cards-container">
+          
           <div className="collection-cards">
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/collection-01.jpg"
+                  src="/images/handloom/banner.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -29,12 +30,12 @@ export default function Collection() {
 
               <div className="collection-details">
                 <div className="collection-name">
-                  <Link href="/collection/hand-knotted">
-                    <span>Hand Knotted</span>
+                  <Link href="/collections/handloom">
+                    <span>Handloom</span>
                   </Link>
                 </div>
                 <div className="collection-btn">
-                  <Link href="/collections/hand-knotted">
+                  <Link href="/collections/handloom">
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -49,7 +50,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/collection-02.jpg"
+                  src="/images/gallery/img-02.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -58,7 +59,7 @@ export default function Collection() {
 
               <div className="collection-details">
                 <div className="collection-name">
-                  <Link href="/collection/hand-tufted">
+                  <Link href="/collections/hand-tufted">
                     <span>Hand Tufted</span>
                   </Link>
                 </div>
@@ -78,7 +79,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/collection-03.jpg"
+                  src="/images/handloom/banner.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -87,13 +88,13 @@ export default function Collection() {
 
               <div className="collection-details">
                 <div className="collection-name">
-                  <Link href="/collection/loom-knotted">
-                    <span>Loom Knotted</span>
+                  <Link href="/collections/shaggy">
+                    <span>Shaggy</span>
                   </Link>
                 </div>
 
                 <div className="collection-btn">
-                  <Link href="/collection/loom-knotted">
+                  <Link href="/collections/shaggy">
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
@@ -108,7 +109,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/collection-04.jpg"
+                  src="/images/handloom/banner.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -117,12 +118,12 @@ export default function Collection() {
 
               <div className="collection-details">
                 <div className="collection-name">
-                  <Link href="/collection/indo-tibetan">
-                    <span>Indo-Tibetan</span>
+                  <Link href="/collections/hand-knotted">
+                    <span>Hand Knotted</span>
                   </Link>
                 </div>
                 <div className="collection-btn">
-                  <Link href="/collection/indo-tibetan">
+                  <Link href="/collections/hand-knotted">
                     <div className="icon">
                       <i className="hgi-stroke hgi-arrow-up-right-01" />
                       <i className="hgi-stroke hgi-arrow-up-right-01 copy" />
