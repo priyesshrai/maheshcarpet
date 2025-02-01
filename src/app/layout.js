@@ -9,6 +9,7 @@ const Footer = dynamic(() => import("@/components/Footor/Footer"));
 const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
 import Providers from "@/components/Nprogress";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const jura = Jura({
   subsets: ["latin"],
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </main>
         </ReactLenis>
+        <GoogleAnalytics gaId="G-X87N2F0D8F" />
       </body>
     </html>
   );
