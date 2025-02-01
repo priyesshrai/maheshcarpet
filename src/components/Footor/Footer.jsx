@@ -86,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
-                  <Link href="/about">About Us</Link>
+                  <Link href="/our-story">About Us</Link>
                 </li>
                 <li>
                   <i className="hgi-stroke hgi-link-forward" />
@@ -170,7 +170,7 @@ export default function Footer() {
       <div className="base-footer">
         <span>
           Copyright &copy; {new Date().getFullYear()} Mahesh Carpets | All
-          rights reserved Design by{" "}
+          rights reserved | Develop & Maintain by{" "}
           <a href="https://wizards.co.in/" target="_blank">
             Wizards Next
           </a>
