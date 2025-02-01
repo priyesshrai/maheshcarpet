@@ -160,12 +160,12 @@ export default function Navbar() {
                   <li>
                     <Link href="/collections/hand-knotted">Hand Knotted</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/collections/shaggy">Shaggy</Link>
                   </li>
                   <li>
                     <Link href="/collections/hand-knotted">Hand Knotted</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/collections/shaped">Asymmetrical</Link>
                   </li>
