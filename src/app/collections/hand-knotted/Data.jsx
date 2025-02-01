@@ -42,17 +42,24 @@ export default function Data() {
         </div> */}
 
         <div className="product-desc">
-          <div className="product-title">
-            <h1>Hand Knotted Construction</h1>
-          </div>
-          <div className="product-content">
-            <p>
-              A masterpiece of craftsmanship, created by skilled artisans who
-              meticulously tie individual knots to form intricate patterns.
-              Known for their unparalleled durability and exquisite detail. Each
-              hand-knotted piece is a unique work of art, combining heritage and
-              luxury or a truly sophisticated statement.
-            </p>
+          <div className="pro-details-container">
+            <div className="pro-text-container">
+              <div className="product-title">
+                <h1>Hand Knotted</h1>
+              </div>
+              <div className="product-banner">
+                <Image src='/images/hand-knotted/banner.jpg' width={1000} height={1000} alt="Flatweave banner" />
+              </div>
+              <div className="product-content">
+                <p>
+                  A masterpiece of craftsmanship, created by skilled artisans who
+                  meticulously tie individual knots to form intricate patterns.
+                  Known for their unparalleled durability and exquisite detail. Each
+                  hand-knotted piece is a unique work of art, combining heritage and
+                  luxury or a truly sophisticated statement.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

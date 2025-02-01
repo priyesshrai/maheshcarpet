@@ -38,7 +38,9 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="about-image"></div>
+          <div className="about-image">
+            <img src="/images/our-story.jpeg" alt="" />
+          </div>
         </div>
 
         <div className="about-sec-part">

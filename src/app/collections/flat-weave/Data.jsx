@@ -42,15 +42,22 @@ export default function Data() {
         </div> */}
 
         <div className="product-desc">
-          <div className="product-title">
-            <h1>Flatweave Construction</h1>
-          </div>
-          <div className="product-content">
-            <p>
-              Using interlocking warp and weft threads, this technique produces
-              lightweight and durable rugs. flatweave carpets are perfect for
-              adding subtle charm and functionality to any space.
-            </p>
+          <div className="pro-details-container">
+            <div className="pro-text-container">
+              <div className="product-title">
+                <h1>Flatweave</h1>
+              </div>
+              <div className="product-banner">
+                <Image src='/images/flatWeave/banner.jpg' width={1000} height={1000} alt="Flatweave banner" />
+              </div>
+              <div className="product-content">
+                <p>
+                  Using interlocking warp and weft threads, this technique produces
+                  lightweight and durable rugs. flatweave carpets are perfect for
+                  adding subtle charm and functionality to any space.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

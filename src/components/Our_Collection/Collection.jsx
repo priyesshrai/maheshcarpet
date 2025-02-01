@@ -21,7 +21,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/handloom/banner.jpg"
+                  src="/images/gallery/img-02.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -50,7 +50,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/gallery/img-02.jpg"
+                  src="/images/handTufted/collection.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}
@@ -109,7 +109,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/handloom/banner.jpg"
+                  src="/images/hand-knotted/collection.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}

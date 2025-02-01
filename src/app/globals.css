@@ -1208,10 +1208,10 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap:13px;
+      gap: 13px;
     }
 
-    .product-banner{
+    .product-banner {
       position: relative;
       width: 100%;
     }
@@ -1645,11 +1645,13 @@ footer {
       .about-heading {
         position: relative;
         width: 100%;
-        font-family: var(--font-jura);
-        font-size: 2.2rem;
+        font-family: var(--font-ibm);
+        font-size: 2rem;
         font-weight: 600;
         letter-spacing: -2px;
         color: rgb(44, 44, 44);
+        line-height: 1;
+        margin-bottom: 18px;
       }
       .about-para {
         position: relative;
@@ -1675,7 +1677,7 @@ footer {
       position: relative;
       width: 100%;
       font-family: var(--font-raleway);
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 600;
     }
     .about-para {
