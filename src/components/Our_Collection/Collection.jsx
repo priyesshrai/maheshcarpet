@@ -79,7 +79,7 @@ export default function Collection() {
             <div className="collection-body">
               <div className="card-img">
                 <Image
-                  src="/images/handloom/banner.jpg"
+                  src="/images/shaggy/collection.jpg"
                   alt="collection1"
                   width={3000}
                   height={3000}

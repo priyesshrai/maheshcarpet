@@ -2327,6 +2327,10 @@ footer {
   .trade-show-img-container .trade-show-img-wraper {
     columns: 1;
   }
+
+  .bann-img{
+    height: 310px !important;
+  }
 }
 
 @media (max-width: 390px) {

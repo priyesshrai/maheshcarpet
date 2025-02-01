@@ -42,16 +42,23 @@ export default function Data() {
         </div> */}
 
         <div className="product-desc">
-          <div className="product-title">
-            <h1>HandTufted Construction</h1>
-          </div>
-          <div className="product-content">
-            <p>
-              A testament to artistry and innovation, created by pushing yarn
-              through a canvas using tufting tools. This technique allows for
-              elaborate patterns, varied texture, and making this a perfect
-              carpet to make a bold statement
-            </p>
+          <div className="pro-details-container">
+            <div className="pro-text-container">
+              <div className="product-title">
+                <h1>HandTufted Construction</h1>
+              </div>
+              <div className="product-banner">
+                <Image src='/images/handTufted/banner.jpg' style={{height:'500px', objectFit:"cover"}} width={1000} height={1000} alt="Flatweave banner" className="bann-img" />
+              </div>
+              <div className="product-content">
+                <p>
+                  A testament to artistry and innovation, created by pushing yarn
+                  through a canvas using tufting tools. This technique allows for
+                  elaborate patterns, varied texture, and making this a perfect
+                  carpet to make a bold statement
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

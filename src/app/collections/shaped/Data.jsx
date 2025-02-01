@@ -42,13 +42,20 @@ export default function Data() {
         </div> */}
 
         <div className="product-desc">
-          <div className="product-title">
-            <h1>Asymmetrical Rugs</h1>
-          </div>
-          <div className="product-content">
-            <p>
-              Distinctive and unconventional floor coverings that break away from the traditional symmetrical designs. Feature uneven shapes, irregular edges, or patterns that create a dynamic and artistic look, making them a focal point in interior design.
-            </p>
+          <div className="pro-details-container">
+            <div className="pro-text-container">
+              <div className="product-title">
+                <h1>Asymmetrical Rugs</h1>
+              </div>
+              <div className="product-banner">
+                <Image src='/images/shaped/banner.jpg' style={{ height: '500px', objectFit: "cover" }} width={1000} height={1000} alt="Flatweave banner" className="bann-img" />
+              </div>
+              <div className="product-content">
+                <p>
+                  Distinctive and unconventional floor coverings that break away from the traditional symmetrical designs. Feature uneven shapes, irregular edges, or patterns that create a dynamic and artistic look, making them a focal point in interior design.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
