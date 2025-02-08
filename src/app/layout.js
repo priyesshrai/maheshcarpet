@@ -3,13 +3,13 @@ import { Jura } from "next/font/google";
 import { Akaya_Kanadaka } from "next/font/google";
 import { Yatra_One } from "next/font/google";
 import { Raleway } from "next/font/google";
-import "./globals.css";
 const Navbar = dynamic(() => import("@/components/Navbar/Navbar"));
 const Footer = dynamic(() => import("@/components/Footor/Footer"));
 const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
 import Providers from "@/components/Nprogress";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import '../../public/css/main.css'
 
 const jura = Jura({
   subsets: ["latin"],
@@ -40,9 +40,9 @@ const yatraOne = Yatra_One({
 });
 
 export const metadata = {
-  title: "Mahesh Carpets - Premium Handcrafted Carpets & Rugs",
+  title: "Mahesh Carpets - Leading Manufacturer & Exporter of fine rugs.",
   description:
-    "Discover the timeless elegance of Mahesh Carpets, where tradition meets modernity. Explore our exquisite collection of handcrafted carpets and rugs, woven with precision and passion. Elevate your living spaces with our premium, durable, and stylish designs that blend heritage craftsmanship with contemporary aesthetics. Experience luxury underfoot with Mahesh Carpets.",
+    "Step into the luxury, where comfort meets style, one weave at a time.",
 };
 import { ReactLenis } from "lenis/react";
 export default function RootLayout({ children }) {
@@ -54,18 +54,22 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
         />
+        <meta
+          name="google-site-verification"
+          content="G2XKjAWAeAOJgLFfUkfX9gTQYENs4xPsZxr-1h6g5Kc"
+        />
       </head>
       <body
         className={`${jura.variable} ${akayaKanadaka.variable} ${raleway.variable} ${yatraOne.variable} ${ibmPlexSans.variable}`}
       >
-        <ReactLenis root>
-          <main className="main">
-            <Navbar />
-            <Providers>{children}</Providers>
-            <ContactUs />
-            <Footer />
-          </main>
-        </ReactLenis>
+        {/* <ReactLenis root> */}
+        <main className="main">
+          <Navbar />
+          <Providers>{children}</Providers>
+          <ContactUs />
+          <Footer />
+        </main>
+        {/* </ReactLenis> */}
         <GoogleAnalytics gaId="G-X87N2F0D8F" />
       </body>
     </html>
