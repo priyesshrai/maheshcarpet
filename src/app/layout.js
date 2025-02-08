@@ -9,7 +9,7 @@ const ContactUs = dynamic(() => import("@/components/Contact_us/ContactUs"));
 import { IBM_Plex_Sans } from "next/font/google";
 import Providers from "@/components/Nprogress";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import '../../public/css/main.css'
+import "./globals.css";
 
 const jura = Jura({
   subsets: ["latin"],
